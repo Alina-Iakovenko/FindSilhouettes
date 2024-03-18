@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="529d8831-76d2-4351-99a3-4f186a87a312" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3df7d5b17bad108fb9dbd396d265cf37963eaddc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/c/5c487fd05f3ae45b0cb111ac16d4521dccccc26a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/2/924f089edb4af5ee45c8a9d1129cd28e2b368138" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/be6ad1b917e443812a54c3f6af5de72891838a63" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/1/e122265c6261aa3d9584145f02bbc0d6e13c432c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/5/e53f3cbe1c3c20b37f607b37902d0b688f6d9077" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/2/f24ab761808092e741802e85f6ff7278c614a327" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/d/3df7d5b17bad108fb9dbd396d265cf37963eaddc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/c/5c487fd05f3ae45b0cb111ac16d4521dccccc26a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/2/924f089edb4af5ee45c8a9d1129cd28e2b368138" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/e/be6ad1b917e443812a54c3f6af5de72891838a63" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/1/e122265c6261aa3d9584145f02bbc0d6e13c432c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/5/e53f3cbe1c3c20b37f607b37902d0b688f6d9077" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/2/f24ab761808092e741802e85f6ff7278c614a327" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/shpp/p2p/cs/aiakovenko/assignment12/Assignment12Part1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/shpp/p2p/cs/aiakovenko/assignment12/Histogram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/shpp/p2p/cs/aiakovenko/assignment12/ImageDisplay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/shpp/p2p/cs/aiakovenko/assignment12/ImageProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/shpp/p2p/cs/aiakovenko/assignment12/Silhouette.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/shpp/p2p/cs/aiakovenko/assignment12/SilhouetteDetection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/Assignment12Part1Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week12.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2dAXxgFXbUEKX3eHnX7H6WmaqW6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/StudyingIT/sh++/computerScience/week11",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\StudyingIT\sh++\computerScience\week12\assets\blueStudying" />
+      <recent name="D:\StudyingIT\sh++\computerScience\week12\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Assignment12Part1">
+    <configuration name="Assignment12Part1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shpp.p2p.cs.aiakovenko.assignment12.Assignment12Part1" />
+      <module name="week12" />
+      <option name="VM_PARAMETERS" value="-Xss100m" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shpp.p2p.cs.aiakovenko.assignment12.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="week12" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Assignment12Part1Test.testImageProcessing_boy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="week12" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Assignment12Part1Test" />
+      <option name="METHOD_NAME" value="testImageProcessing_boy" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Assignment12Part1" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.Assignment12Part1Test.testImageProcessing_boy" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Assignment12Part1" />
+        <item itemvalue="JUnit.Assignment12Part1Test.testImageProcessing_boy" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+        <option value="jdk-20.0.2-azul-20.0.2-4caba194b151-eb49e076" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="529d8831-76d2-4351-99a3-4f186a87a312" name="Changes" comment="" />
+      <created>1709452106969</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709452106969</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/shpp/p2p/cs/aiakovenko/assignment12/Histogram.java</url>
+          <line>75</line>
+          <properties class="com.shpp.p2p.cs.aiakovenko.assignment12.Histogram" method="equalize">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/shpp/p2p/cs/aiakovenko/assignment12/SilhouetteDetection.java</url>
+          <line>31</line>
+          <properties class="com.shpp.p2p.cs.aiakovenko.assignment12.SilhouetteDetection" method="checkPixel">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
