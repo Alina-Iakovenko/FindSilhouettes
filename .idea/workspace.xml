@@ -4,38 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="529d8831-76d2-4351-99a3-4f186a87a312" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3df7d5b17bad108fb9dbd396d265cf37963eaddc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/c/5c487fd05f3ae45b0cb111ac16d4521dccccc26a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/2/924f089edb4af5ee45c8a9d1129cd28e2b368138" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/be6ad1b917e443812a54c3f6af5de72891838a63" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/1/e122265c6261aa3d9584145f02bbc0d6e13c432c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/5/e53f3cbe1c3c20b37f607b37902d0b688f6d9077" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/2/f24ab761808092e741802e85f6ff7278c614a327" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/d/3df7d5b17bad108fb9dbd396d265cf37963eaddc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/c/5c487fd05f3ae45b0cb111ac16d4521dccccc26a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/2/924f089edb4af5ee45c8a9d1129cd28e2b368138" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/e/be6ad1b917e443812a54c3f6af5de72891838a63" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/1/e122265c6261aa3d9584145f02bbc0d6e13c432c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/5/e53f3cbe1c3c20b37f607b37902d0b688f6d9077" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/2/f24ab761808092e741802e85f6ff7278c614a327" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/shpp/p2p/cs/aiakovenko/assignment12/Assignment12Part1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/shpp/p2p/cs/aiakovenko/assignment12/Histogram.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/shpp/p2p/cs/aiakovenko/assignment12/ImageDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/shpp/p2p/cs/aiakovenko/assignment12/ImageProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/shpp/p2p/cs/aiakovenko/assignment12/Silhouette.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/shpp/p2p/cs/aiakovenko/assignment12/SilhouetteDetection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/Assignment12Part1Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week12.iml" afterDir="false" />
+    <list default="true" id="529d8831-76d2-4351-99a3-4f186a87a312" name="Changes" comment="first try">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/shpp/p2p/cs/aiakovenko/assignment12/Assignment12Part1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shpp/p2p/cs/aiakovenko/assignment12/Assignment12Part1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/shpp/p2p/cs/aiakovenko/assignment12/Histogram.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/shpp/p2p/cs/aiakovenko/assignment12/ImageDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shpp/p2p/cs/aiakovenko/assignment12/ImageDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/shpp/p2p/cs/aiakovenko/assignment12/ImageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shpp/p2p/cs/aiakovenko/assignment12/ImageProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/shpp/p2p/cs/aiakovenko/assignment12/Silhouette.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shpp/p2p/cs/aiakovenko/assignment12/Silhouette.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/shpp/p2p/cs/aiakovenko/assignment12/SilhouetteDetection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shpp/p2p/cs/aiakovenko/assignment12/SilhouetteDetection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/Assignment12Part1Test.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,17 +41,22 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Assignment12Part1.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.Assignment12Part1Test (1).executor": "Run",
+    "JUnit.Assignment12Part1Test.executor": "Run",
+    "JUnit.Assignment12Part1Test.testImageProcessing_boy.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/StudyingIT/sh++/computerScience/week11",
+    "last_opened_file_path": "D:/StudyingIT/sh++/computerScience/week12",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
@@ -84,7 +66,7 @@
       <recent name="D:\StudyingIT\sh++\computerScience\week12\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Assignment12Part1">
+  <component name="RunManager">
     <configuration name="Assignment12Part1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.shpp.p2p.cs.aiakovenko.assignment12.Assignment12Part1" />
       <module name="week12" />
@@ -99,14 +81,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="week12" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Assignment12Part1Test.testImageProcessing_boy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Assignment12Part1Test" type="JUnit" factoryName="JUnit">
       <module name="week12" />
       <extension name="coverage">
         <pattern>
@@ -116,22 +91,53 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.Assignment12Part1Test" />
-      <option name="METHOD_NAME" value="testImageProcessing_boy" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-Xss100m" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.Assignment12Part1" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.Assignment12Part1Test.testImageProcessing_boy" />
-    </list>
+    <configuration name="Assignment12Part1Test" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="week12" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Assignment12Part1Test" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-Xss100m" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tests in week12" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="week12" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-Xss100m" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Assignment12Part1" />
-        <item itemvalue="JUnit.Assignment12Part1Test.testImageProcessing_boy" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.Assignment12Part1Test" />
+        <item itemvalue="JUnit.Assignment12Part1Test" />
+        <item itemvalue="JUnit.Assignment12Part1Test" />
       </list>
     </recent_temporary>
   </component>
@@ -152,30 +158,19 @@
       <option name="presentableId" value="Default" />
       <updated>1709452106969</updated>
     </task>
+    <task id="LOCAL-00001" summary="first try">
+      <option name="closed" value="true" />
+      <created>1710791454732</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710791454732</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/com/shpp/p2p/cs/aiakovenko/assignment12/Histogram.java</url>
-          <line>75</line>
-          <properties class="com.shpp.p2p.cs.aiakovenko.assignment12.Histogram" method="equalize">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/com/shpp/p2p/cs/aiakovenko/assignment12/SilhouetteDetection.java</url>
-          <line>31</line>
-          <properties class="com.shpp.p2p.cs.aiakovenko.assignment12.SilhouetteDetection" method="checkPixel">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first try" />
+    <option name="LAST_COMMIT_MESSAGE" value="first try" />
   </component>
 </project>

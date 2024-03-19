@@ -4,15 +4,17 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
+/**
+ * The class to show image in the separate window
+ */
 public class ImageDisplay {
-
-    // Метод, який відображає масив сірих пікселів у новому вікні
-    public void displayImage(int[][] grayscaleImage) {
-        // Створення нового JFrame
+    /**
+     * Creates window and show image
+     * @param grayscaleImage    an array of pixels of the image
+     */
+    public static void displayImage(int[][] grayscaleImage) {
         JFrame frame = new JFrame("Grayscale Image");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        // Створення JPanel для відображення зображення
         JPanel panel = new JPanel() {
             @Override
             protected void paintComponent(Graphics g) {
@@ -20,22 +22,20 @@ public class ImageDisplay {
                 drawImage(g, grayscaleImage);
             }
         };
-
-        // Встановлення розмірів панелі
         int width = grayscaleImage[0].length;
         int height = grayscaleImage.length;
         panel.setPreferredSize(new Dimension(width, height));
-
-        // Додавання панелі до JFrame
         frame.getContentPane().add(panel);
-
-        // Налаштування розмірів вікна та відображення його на екрані
         frame.pack();
         frame.setVisible(true);
     }
 
-    // Метод для малювання зображення на JPanel
-    private void drawImage(Graphics g, int[][] grayscaleImage) {
+    /**
+     * Creates image from an array of pixels
+     * @param g                 Graphics object
+     * @param grayscaleImage    array of pixels
+     */
+    private static void drawImage(Graphics g, int[][] grayscaleImage) {
         int width = grayscaleImage[0].length;
         int height = grayscaleImage.length;
 

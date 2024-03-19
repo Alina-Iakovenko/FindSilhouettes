@@ -6,21 +6,46 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
+/**
+ * The class to read file with image,
+ * create an array of pixels and modify it
+ */
 public class ImageProcessor {
+    // height of the image
+    static int height;
+    // width of the image
+    static int width;
+    // array of pixels of the image
+    static int[][] image;
 
+    /**
+     * The constructor to create an object of the class
+     * @param file              the file in jpg format with image
+     * @throws IOException      if file couldn't be read
+     */
+    public ImageProcessor(File file) throws IOException {
+        image = createPixelsFromJPEG(file);
+    }
+
+    /**
+     * The getter for array of pixels of modified image
+     * @return  array of pixels
+     */
+    public int[][] getImage() {
+        return this.toBlackAndWhite(this.toGrayscale(image));
+    }
+
+    /**
+     * Reads the file with an image and create an array of pixels
+     * @param file          the file with image
+     * @return              array of pixels
+     * @throws IOException  if file couldn't be read
+     */
     public static int[][] createPixelsFromJPEG(File file) throws IOException {
-
-        // Читаємо зображення з файлу
         BufferedImage image = ImageIO.read(file);
-
-        // Отримуємо розмір зображення
-        int width = image.getWidth();
-        int height = image.getHeight();
-
-        // Створюємо масив для зберігання пікселів
+        height = image.getHeight();
+        width = image.getWidth();
         int[][] imagePixels = new int[height][width];
-
-        // Заповнюємо масив пікселів даними зображення
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
                 imagePixels[y][x] = image.getRGB(x, y);
@@ -29,29 +54,12 @@ public class ImageProcessor {
         return imagePixels;
     }
 
-    public static boolean[][] createBooleanPixels(File file) throws IOException {
-        // Читаємо зображення з файлу
-        BufferedImage image = ImageIO.read(file);
-
-        // Отримуємо розмір зображення
-        int width = image.getWidth();
-        int height = image.getHeight();
-
-        // Створюємо масив для зберігання пікселів
-        boolean[][] imagePixels = new boolean[height][width];
-
-        // Заповнюємо масив пікселів даними зображення
-        for (int y = 0; y < height; y++) {
-            for (int x = 0; x < width; x++) {
-                imagePixels[y][x] = false;
-            }
-        }
-        return imagePixels;
-    }
-
-    public static int[][] toGrayscale(int[][] image) {
-        int height = image.length;
-        int width = image[0].length;
+    /**
+     * Modify image to grayscale
+     * @param image the array of pixels
+     * @return      the modified array of pixels
+     */
+    private int[][] toGrayscale(int[][] image) {
         int[][] grayscaleImage = new int[height][width];
 
         for (int i = 0; i < height; ++i) {
@@ -66,24 +74,74 @@ public class ImageProcessor {
         }
         return grayscaleImage;
     }
-    public static int[][] toContrast(int[][] pixels) {
-        int[][] luminances = new int[pixels.length][pixels[0].length];
+    /**
+     * Modify grayscale image to black and white
+     * @param image the array of pixels
+     * @return      the modified array of pixels
+     */
+    private int[][] toBlackAndWhite(int[][] image) {
+        int[][] blackAndWhiteImage = new int[height][width];
+        int averagePixel = getAveragePixel(image); // average gray
+        convertGrayToBlackAndWhite(image, averagePixel, blackAndWhiteImage);
+        return blackAndWhiteImage;
+    }
 
-        for (int i = 0; i < pixels.length; ++i) {
-            for (int j = 0; j < pixels[i].length; ++j) {
-                Color color = new Color(pixels[i][j]);
-                luminances[i][j] = color.getRed();
+    /**
+     * Takes gray pixel and change it to white or black one
+     * @param grayscaleImage        array of the image to convert
+     * @param averagePixel          int of average gray
+     * @param blackAndWhiteImage    array of the image to save to black and white image
+     */
+    private void convertGrayToBlackAndWhite(int[][] grayscaleImage, int averagePixel, int[][] blackAndWhiteImage) {
+        int blackPixels = 0;
+        int whitePixels = 0;
+
+        for (int i = 0; i < height; ++i) {
+            for (int j = 0; j < width; ++j) {
+                int pixel = grayscaleImage[i][j];
+                if (pixel < averagePixel) {
+                    blackAndWhiteImage[i][j] = 0;
+                    blackPixels++;
+                }
+                else {
+                    blackAndWhiteImage[i][j] = -1;
+                    whitePixels++;
+                }
             }
         }
-
-        return luminances;
+        /* if black area is bigger than white - invert image
+        * because the background has a bigger area in our conception
+        */
+        if (whitePixels <= blackPixels) {
+            invertImage(blackAndWhiteImage);
+        }
     }
-    public static int[][] contrastToBlackAndWhite(int[][] image) {
-        int height = image.length;
-        int width = image[0].length;
-        int[][] blackAndWhiteImage = new int[height][width];
-        int lightestPixel = image[0][1]; //255
-        int darkestPixel = image[0][1]; //0
+
+    /**
+     * Change black pixel to white and white to black
+     * @param image     the array of pixels
+     */
+    private static void invertImage(int[][] image) {
+        for (int i = 0; i < height; ++i) {
+            for (int j = 0; j < width; ++j) {
+                int pixel = image[i][j];
+                if (pixel == 0) {
+                    image[i][j] = -1;
+                } else {
+                    image[i][j] = 0;
+                }
+            }
+        }
+    }
+
+    /**
+     * Finds the lightest and the darkest pixel and calculate the average gray
+     * @param image     the array of pixels
+     * @return          int of average gray
+     */
+    private static int getAveragePixel(int[][] image) {
+        int lightestPixel = image[0][1];
+        int darkestPixel = image[0][1];
         int averagePixel;
 
         for (int i = 0; i < height; ++i) {
@@ -98,36 +156,7 @@ public class ImageProcessor {
             }
         }
         averagePixel = (lightestPixel + darkestPixel)/2;
-
-        System.out.println("lightestPixel " + lightestPixel);
-        System.out.println("darkestPixel " + darkestPixel);
-        System.out.println("averagePixel " + averagePixel);
-
-        for (int i = 0; i < height; ++i) {
-            for (int j = 0; j < width; ++j) {
-                int pixel = image[i][j];
-                if (pixel < averagePixel) {
-                    blackAndWhiteImage[i][j] = 0;
-                }
-                else {
-                    blackAndWhiteImage[i][j] = -1;
-                }
-            }
-        }
-        return blackAndWhiteImage;
+        return averagePixel;
     }
 
-
-
-
-    public static void printImage(int[][] image) {
-        int height = image.length;
-        int width = image[0].length;
-        for (int i = 0; i < height; i++) {
-            for (int j = 0; j < width; j++) {
-                System.out.print(image[i][j] + " ");
-            }
-            System.out.println();
-        }
-    }
 }
