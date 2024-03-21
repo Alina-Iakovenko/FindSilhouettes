@@ -4,11 +4,13 @@ package com.shpp.p2p.cs.aiakovenko.assignment12;
  * The class for silhouette
  */
 public class Silhouette {
-    // quantity of silhouette`s pixels
+    /**
+     * The quantity of silhouette`s pixels
+      */
     int silhouetteArea;
 
     /**
-     * The constructor to create a silhouette
+     * Create a silhouette
      * @param silhouetteArea    quantity of silhouette`s pixels
      */
     public Silhouette(int silhouetteArea) {

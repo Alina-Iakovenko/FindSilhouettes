@@ -10,20 +10,20 @@ import java.awt.image.BufferedImage;
 public class ImageDisplay {
     /**
      * Creates window and show image
-     * @param grayscaleImage    an array of pixels of the image
+     * @param image    an array of pixels of the image
      */
-    public static void displayImage(int[][] grayscaleImage) {
-        JFrame frame = new JFrame("Grayscale Image");
+    public static void displayImage(int[][] image) {
+        JFrame frame = new JFrame("Detect silhouettes");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JPanel panel = new JPanel() {
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                drawImage(g, grayscaleImage);
+                drawImage(g, image);
             }
         };
-        int width = grayscaleImage[0].length;
-        int height = grayscaleImage.length;
+        int width = image[0].length;
+        int height = image.length;
         panel.setPreferredSize(new Dimension(width, height));
         frame.getContentPane().add(panel);
         frame.pack();
@@ -33,20 +33,20 @@ public class ImageDisplay {
     /**
      * Creates image from an array of pixels
      * @param g                 Graphics object
-     * @param grayscaleImage    array of pixels
+     * @param image    array of pixels
      */
-    private static void drawImage(Graphics g, int[][] grayscaleImage) {
-        int width = grayscaleImage[0].length;
-        int height = grayscaleImage.length;
+    private static void drawImage(Graphics g, int[][] image) {
+        int width = image[0].length;
+        int height = image.length;
 
-        BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+        BufferedImage imageToDisplay = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
-                int gray = grayscaleImage[y][x];
-                image.setRGB(x, y, gray);
+                int color = image[y][x];
+                imageToDisplay.setRGB(x, y, color);
             }
         }
-        g.drawImage(image, 0, 0, null);
+        g.drawImage(imageToDisplay, 0, 0, null);
     }
 
 }
