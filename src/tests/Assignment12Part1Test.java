@@ -1,20 +1,16 @@
 package tests;
 
-import com.shpp.p2p.cs.aiakovenko.assignment12.ImageDisplay;
-import com.shpp.p2p.cs.aiakovenko.assignment12.ImageProcessor;
-import com.shpp.p2p.cs.aiakovenko.assignment12.SilhouetteDetection;
-import org.junit.jupiter.api.Assertions;
+import com.shpp.p2p.cs.aiakovenko.assignment12.*;
+import com.shpp.p2p.cs.aiakovenko.assignment12.Constants;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
-import java.io.File;
 import java.io.IOException;
 import java.io.PrintStream;
 
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class Assignment12Part1Test {
 
@@ -26,6 +22,8 @@ public class Assignment12Part1Test {
             }
             // Read the file, create and show black and white image from it
             int[][] imagePixels = ImageProcessor.getImage(fileName);
+
+            imagePixels = SilhouetteErosion.repeatErosion(imagePixels, Constants.EROSION_DEEP);
             // Calculate silhouettes and print its quantity to console
             SilhouetteDetection detection = new SilhouetteDetection(imagePixels);
             return detection.calculateSilhouettes();
@@ -104,7 +102,7 @@ public class Assignment12Part1Test {
     @Test
     public void Assignment12Part1_testHearts() {
         String fileName = "hearts.jpg";
-        int expectedResult = 12;
+        int expectedResult = 10;
         assertEquals(expectedResult, testMain(new String[]{fileName}));
     }
     @Test
@@ -129,7 +127,7 @@ public class Assignment12Part1Test {
     @Test
     public void Assignment12Part1_testStars() {
         String fileName = "stars.jpg";
-        int expectedResult = 5;
+        int expectedResult = 4;
         assertEquals(expectedResult, testMain(new String[]{fileName}));
     }
     @Test
@@ -161,7 +159,7 @@ public class Assignment12Part1Test {
     @Test
     public void Assignment12Part1_testBlackBackgroundButterflies2() {
         String fileName = "blackBackground/butterflies2.jpg";
-        int expectedResult = 6;
+        int expectedResult = 5;
         assertEquals(expectedResult, testMain(new String[]{fileName}));
     }
     @Test

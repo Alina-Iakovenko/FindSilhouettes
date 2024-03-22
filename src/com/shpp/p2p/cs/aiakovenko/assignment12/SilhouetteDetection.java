@@ -55,6 +55,7 @@ public class SilhouetteDetection {
         int width = imagePixel[0].length;
         double totalArea = height * width;
         double garbageThreshold = totalArea * Constants.PERCENT_OF_TOTAL_AREA;
+        System.out.println(garbageThreshold);
 
         for (int i = 0; i < height; ++i) {
             for (int j = 0; j < width; ++j) {
@@ -65,6 +66,7 @@ public class SilhouetteDetection {
                      * the silhouette is big enough add it to the list
                      */
                     if (silhouetteArea > 0 && silhouetteArea > garbageThreshold) {
+                        System.out.println(silhouetteArea);
                         silhouettes.add(new Silhouette(silhouetteArea));
                         silhouetteArea = 0;
                     }
@@ -84,19 +86,14 @@ public class SilhouetteDetection {
      * @param j coordinate of the pixel on the abscissa axis
      */
     private void checkPixelsUsingDFS(int i, int j, int height, int width) {
-        //An array with coordinate on axis X of pixels neighbors
-        int[] nextX = {-1, -1, -1, 0, 1, 1, 1, 0};
-        //An array with coordinate on axis Y of pixels neighbors
-        int[] nextY = {-1, 0, 1, 1, 1, 0, -1, -1};
-
         if (i >= 0 && i < height && j >= 0 && j < width) {
             if (imagePixel[i][j] == Constants.BLACK_COLOR) {
                 if (!checkedPixelsArray[i][j]) {
                     checkedPixelsArray[i][j] = true;
                     silhouetteArea++;
-                    for (int k = 0; k < nextX.length; k++) {
-                        int neighborX = i + nextX[k];
-                        int neighborY = j + nextY[k];
+                    for (int k = 0; k < Constants.NEXT_X.length; k++) {
+                        int neighborX = i + Constants.NEXT_X[k];
+                        int neighborY = j + Constants.NEXT_Y[k];
                         checkPixelsUsingDFS(neighborX, neighborY, height, width);
                     }
                 }

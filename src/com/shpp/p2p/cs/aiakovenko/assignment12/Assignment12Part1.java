@@ -11,12 +11,13 @@ public class Assignment12Part1 {
 
     public static void main(String[] args){
         try {
-            String fileName = "test.jpg";
+            String fileName = "blackBackground/circlesAndSquare.jpg";
             if (args.length > 0) {
                 fileName = args[0];
             }
             // Read the file, create and show black and white image from it
             int[][] imagePixels = ImageProcessor.getImage(fileName);
+            imagePixels = SilhouetteErosion.repeatErosion(imagePixels,Constants.EROSION_DEEP);
             ImageDisplay.displayImage(imagePixels);
 
             // Calculate silhouettes and print its quantity to console
